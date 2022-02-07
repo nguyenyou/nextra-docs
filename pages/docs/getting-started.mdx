@@ -2,4 +2,26 @@
 title: Getting started
 ---
 
-Getting started
+# Getting Started
+
+## Installation
+
+Inside your React project directory, run the following:
+
+```plaintext
+yarn add swr
+```
+
+Or with npm:
+
+```plaintext
+npm install swr
+```
+
+## Quick Start
+
+For normal RESTful APIs with JSON data, first you need to create a `fetcher` function, which is just a wrapper of the native `fetch`:
+
+```jsx
+const fetcher = (...args) => fetch(...args).then((res) => res.json())
+```
